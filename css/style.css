@@ -1,5 +1,5 @@
 body{
-    font-family: monospace, sans-serif, cursive, helvetica;
+    font-family: monospace, courier, sans-serif, cursive, helvetica;
     font-size: 15px;
     line-height: 1.5;
     padding: 0;
@@ -9,69 +9,72 @@ body{
 
 /* Global */
 .container{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .button_1{
-    height: 38px;
-    background: #000000;
-    border: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    color:#43cad1;
+  height: 38px;
+  background: #000000;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #43cad1;
 }
 
 /* Header */
-header{
-    background: #449cdb;
-    color: #000000;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #474747 3px solid;
+header {
+  background: #449cdb;
+  color: #000000;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #474747 5px solid;
 }
 
-header a{
-    color:#000000;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+header a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 header li{
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
 }
 
-header #branding{
-    float: left;
+header #branding {
+  float: left;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-header #branding h1{
-    margin: 0;
+header #branding h1 {
+  margin: 0;
 }
 
-header nav{
-    float: right;
-    margin-top: 10px;
+header nav {
+  float: right;
+  margin-top: 10px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 header .highlight, header .current a{
-    color:#43cad1;
-    font-weight: bold;
+  color: #43cad1;
+  font-weight: bold;
 }
 
 header a:hover{
-    color: #ed5c5c;
-    font-weight:bold;
+  color: #ed5c5c;
+  font-weight: bold;
 }
+
 
 .page-title{
     font-size: 30px;
@@ -151,11 +154,26 @@ header a:hover{
     width: 90px;
 }
 
+img#me{
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+img#jr{
+    border-radius: 20px;
+    margin-top: 70px;
+}
+
+/* Sidebar */
+aside#siadebar{
+    float: right;
+}
 
 /* Main-col */
 article#main-col{
     float: left;
     width: 65%;
+    text-align: center;
 }
 
 footer{
@@ -166,12 +184,24 @@ footer{
     text-align: center;
 }
 
-@media(max-width: 768px){
-    header #branding,
-    header nav,
-    header nav li{
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
+/* Media Queries */
+@media(max-width: 768px) {
+  header #branding, 
+  header nav,
+  header nav li,
+  #newlsetter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar
+{
+    float: none;
+    text-align: center;
+    width: 100%
+  }
 }
+
+header {
+   padding-bottom: 20px; 
+  }
+  
